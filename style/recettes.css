@@ -21,14 +21,15 @@ ul {
 .navbox {
   margin-left: 20%;
   margin-right: 20%;
-  border-radius: 8px;
-  background-color: rgb(27, 27, 27);
 }
+
 nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: rgb(53, 53, 53);
+    border-radius: 8px;
   }
 
 .li {
