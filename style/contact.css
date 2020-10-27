@@ -58,61 +58,63 @@ a {
  
 .container {
     position: relative;
-    margin: 17%;;
+    margin: 17%;
+    padding: 10px;
     color: white;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 20px auto auto auto 20px;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 60px 90px 60px 150px 60px;
     background-color: grey;
   }
-input {
-    padding: 10px 30px;
+label {
+    width: 100%;
+    display: block;
 }
 .name {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;   
 }
 .fname{
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 
 }
 .email{
-    grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
     
 }
 .adresse{
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
     
 }
 .tel1{
-    grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
     
 }
 .tel2{
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
     
 }
 .message{
-    grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
     
@@ -123,8 +125,5 @@ input {
     border-radius: 8px;
 }
 .sub-res {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    justify-content: center;
 }

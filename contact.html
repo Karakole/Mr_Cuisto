@@ -28,7 +28,8 @@
   </header>
   <main>
     <form action="" method="POST">
-      <section class="container">
+      <section>
+        <div class="container">
         <div class="name">
             <label for="name">NOM (obligatoire): </label>
             <input class=" yellow" type="text" name="name" id="name" required>
@@ -43,7 +44,7 @@
         </div>
         <div class="adresse">
             <label for="adresse">Adresse: </label>
-            <textarea class=" yellow" name="adresse" id="adresse" cols="2" rows="1"></textarea>
+            <input class=" yellow" type="text" name="adresse" id="adresse">
         </div>
         <div class="tel1">
               <label for="tel1">Téléphone: </label>
@@ -55,12 +56,11 @@
         </div>
         <div class="message">
               <label for="message">Message: </label>
-              <textarea class="yellow" name="message" id="message" cols="30" rows="1"></textarea>
+              <textarea class="yellow" name="message" id="message" rows="1"></textarea>
         </div>
-        <div class="sub-res">
+        </div>
               <input type="submit" value="Envoyer">
               <input type="reset" value="Réinitialiser">
-        </div>
       </section>
     </form>
   </main>
