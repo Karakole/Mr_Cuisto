@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/contact.css">
-    <title>Contact</title>
-</head>
-<body>
-    <header>
-        <section class="navbox">
-          <nav>
-            <div class="logo">
-              <a href="./index.html">Mister Cuisto</a>
-            </div>
-            <ul>
-              <li class="li"><a href="./index.html">Accueil</a></li>
-              <li class="li"><a href="../restaurant">Restaurant</a></li>
-              <li class="li"><a href="./recettes.html">Recettes</a></li>
-              <li class="li"><a href="./livredor.html">Livre d'Or</a></li>
-              <li class="li"><a href="./contact.html">Contact</a></li>
-              <li><button class="resbut li" style="float:right">Réserver</button></li>
-            </ul>
-          </nav>
-        </section>
-      </header>
-      <main>
-          <form action="" method="POST">
-            <section class="container">
-              <div class="cols-lab">
-                <label for="name">NOM (obligatoire): </label>
-                <label for="fname">Prénom</label>
-                <label for="email">Email (obligatoire): </label>
-                <label for="tel1">Téléphone: </label>
-                <label for="tel2">Mobile: </label>
-              </div>
-              <div class="cols-input">
-                <input class=" yellow" type="text" name="fname" id="fname">
-                <input class=" yellow" type="email" name="email" id="email" required>
-                <input class=" yellow" type="text" name="name" id="name" required>
-                <input class=" yellow" type="tel" name="tel1" id="tel1">
-                <input class=" yellow" type="tel" name="tel2" id="tel2">
 
-              </div>
-              <div class="tel">
-              </div>
-              <div class="adresse">
-                <label for="adresse">Adresse: </label>
-                <textarea class=" yellow" name="adresse" id="adresse" cols="100" rows="3"></textarea>
-              </div>
-              <div class="message">
-                <label for="message">Message:  </label>
-                <textarea class="yellow" name="message" id="message" cols="100" rows="5"></textarea>
-              </div>
-              <div class="sub-res">
-                <input type="submit" value="Envoyer">
-                <input type="reset" value="Réinitialiser">
-              </div>
-            </section>
-          </form>
-      </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/contact.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <header>
+    <section class="navbox">
+      <nav>
+        <div class="logo">
+          <a href="./index.html">Mister Cuisto</a>
+        </div>
+        <ul>
+          <li class="li"><a href="./index.html">Accueil</a></li>
+          <li class="li"><a href="../restaurant">Restaurant</a></li>
+          <li class="li"><a href="./recettes.html">Recettes</a></li>
+          <li class="li"><a href="./livredor.html">Livre d'Or</a></li>
+          <li class="li"><a href="./contact.html">Contact</a></li>
+          <li><button class="resbut li" style="float:right">Réserver</button></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <form action="" method="POST">
+      <section class="container">
+        <div class="name">
+            <label for="name">NOM (obligatoire): </label>
+            <input class=" yellow" type="text" name="name" id="name" required>
+        </div>
+        <div class="fname">
+            <label for="fname">Prénom</label>
+            <input class=" yellow" type="text" name="fname" id="fname">
+        </div>
+        <div class="email">
+            <label for="email">Email (obligatoire): </label>
+            <input class=" yellow" type="email" name="email" id="email" required>
+        </div>
+        <div class="adresse">
+            <label for="adresse">Adresse: </label>
+            <textarea class=" yellow" name="adresse" id="adresse" cols="2" rows="1"></textarea>
+        </div>
+        <div class="tel1">
+              <label for="tel1">Téléphone: </label>
+              <input class=" yellow" type="tel" name="tel1" id="tel1">
+        </div>
+        <div class="tel2">
+              <label for="tel2">Mobile: </label>
+              <input class=" yellow" type="tel" name="tel2" id="tel2">
+        </div>
+        <div class="message">
+              <label for="message">Message: </label>
+              <textarea class="yellow" name="message" id="message" cols="30" rows="1"></textarea>
+        </div>
+        <div class="sub-res">
+              <input type="submit" value="Envoyer">
+              <input type="reset" value="Réinitialiser">
+        </div>
+      </section>
+    </form>
+  </main>
 </body>
+
 </html>
