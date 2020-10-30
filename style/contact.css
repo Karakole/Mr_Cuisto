@@ -1,8 +1,24 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #181814;
+    background: linear-gradient(to right, #414345, #232526);
+
 }
+                    /*Barre de navigation */
+
+.navbox {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    background: linear-gradient(to left, #414345, #232526);
+    border-radius: 6px;
+  }
 .logo {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -11,7 +27,6 @@ body {
     float:left;
     padding: 0;
     margin: 0;
-    position: relative;
     text-decoration: none;
     height: 30px;
     line-height: 60px;
@@ -25,21 +40,6 @@ body {
     border-radius: 8px;
 }
 
-.navbox {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-grow: 1;
-    overflow: hidden;
-    background-color: rgb(53, 53, 53);
-    border-radius: 6px;
-  }
 ul {
   list-style: none;
 }
@@ -55,9 +55,26 @@ a {
     text-decoration: none;
     border-right: 1px solid #bbb;
 }
- 
+                        /* Image haut */
+.con-titre {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    border-radius: 8px;
+    background-image: url("./recettes-image.jpg");
+  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+  }
+                        /* Formulaire */
 .container {
-    margin: 17% 17% 0 17%;
+    margin: 0 17% 0 17%;
     padding: 2%;
     color: white;
     border-radius: 10px;
@@ -81,7 +98,9 @@ textarea {
     height: 100%;
     display: block;
     margin: 0 auto;
+    padding-bottom: 80px;
     justify-content: center;
+    border-radius: 8px;
 }
 .droite {
     padding-left: 10px;
@@ -94,4 +113,24 @@ textarea {
 }
 .sub-res {
     text-align: center;
+}
+
+                            /* Footer  */
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+.footer-left {
+    padding-right: 50%;
+}
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-right {
+    justify-self: center;
 }
