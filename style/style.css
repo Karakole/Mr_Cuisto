@@ -6,16 +6,11 @@ body {
 }
                   /*Barre de navigation */
 
-.navbox {
-margin-left: 20%;
-margin-right: 20%;
-}
 
 nav {
-  margin: 0;
+  margin: 0 20% 0 20%;
   padding: 0;
   display: flex;
-  overflow: hidden;
   background: linear-gradient(to left, #414345, #232526);
   border-radius: 6px;
 }
@@ -23,29 +18,22 @@ nav {
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 30px;
-  display: block;
-  float:left;
-  padding: 0;
-  margin: 0;
   text-decoration: none;
-  height: 30px;
-  line-height: 60px;
 }
 .resbut {
-  float: right;
   color: white;
   background-color: green;
-  padding: 0;
-  margin: 0;
+  height: 30px;
   border-radius: 8px;
 }
 
 ul {
+  display: flex;
+  flex-wrap: wrap;
 list-style: none;
+align-items: center;
 }
-li { 
-display: inline-block;
-}
+
 
 a {
   display: block;
@@ -59,10 +47,10 @@ a {
 /* Footer  */
 
 footer {
-display: grid;
-grid-template-columns: 50% 50%;
-color: white;
-}
+  display: grid;
+  grid-template-columns: 50% 50%;
+  color: white;
+  }
 .footer-left {
 padding-right: 50%;
 }
@@ -73,5 +61,6 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 }
 
 .footer-right {
+  flex-direction: column;
 justify-self: center;
-}  
+}
